@@ -1,0 +1,9 @@
+# You can define a service for your package
+# The service respond to a request by a response
+# you can define the service client in package src
+# example:
+# Request:
+string name
+---
+# Response:
+PackageMsg id_name

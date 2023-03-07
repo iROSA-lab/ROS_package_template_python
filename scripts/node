@@ -1,0 +1,11 @@
+#!/usr/bin/env python   
+
+import rospy
+from package_name.package_src import PackageClass
+
+# initialize node
+rospy.init_node('package_name', anonymous=True)
+# create an object of the class
+object = PackageClass(id=0)
+# spin - to keep the node alive
+rospy.spin()

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>package_name</name>
+    <version>2.3.1</version>
+    <description>package_description</description>
+    <maintainer email="your_email">your_name</maintainer>
+    <author email="your_email">your_name</author>
+    <license>BSD</license>
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <!-- python packages depends on rospy -->
+    <depend>rospy</depend>
+ 
+    <!-- additional packages for robot tasks -->
+    <depend>control_msgs</depend>
+    <depend>geometry_msgs</depend>
+    <depend>std_msgs</depend>
+    <depend>nav_msgs</depend>
+    <depend>trajectory_msgs</depend>
+    <depend>moveit_msgs</depend>
+    <depend>tf</depend>
+    <depend>moveit_commander</depend>
+    <depend>actionlib</depend>
+
+    <!-- gazbo_ros package to work with gazebo -->
+    <depend>gazebo_ros</depend>
+
+    <!-- message generation to generate new messages-->
+    <build_depend>message_generation</build_depend>
+    <run_depend>message_runtime</run_depend>
+    
+</package>
