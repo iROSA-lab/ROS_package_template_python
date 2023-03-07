@@ -22,6 +22,9 @@ add_service_files(
   PackageSrv.srv # update with your service file name in srv folder
 )
 
+# setup the package - it will run setup.py
+catkin_python_setup()
+
 # generate added messages and services
 generate_messages(
   DEPENDENCIES
@@ -39,8 +42,4 @@ catkin_package(
 catkin_install_python(PROGRAMS 
     scripts/node # add nodes here 
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-    USE_SOURCE_PERMISSIONS
 )
-
-# setup the package - it will run setup.py
-catkin_python_setup()
